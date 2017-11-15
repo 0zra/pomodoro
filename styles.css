@@ -10,13 +10,22 @@ h1 {
   color: teal;
   font-size: 400%;
   font-family: Cyber;
+
 }
+
 body {
   background-image: url("https://c1.staticflickr.com/3/2741/4437940668_d35d1ec67e_b.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   background-color: #000;
+  cursor:default;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
 }
 
 .kutije {
@@ -38,6 +47,7 @@ body {
 .material-icons {
   color: teal;
   font-size: 400%;
+  position: absolute;
 }
 
 #gornji {
@@ -45,6 +55,7 @@ body {
 }
 #donji {
   height: 400px;
+  position: relative;
 }
 #work {
   float: left;
@@ -54,12 +65,45 @@ body {
   float: right;
   margin-right: 75px;
 }
-#wm, #wp, #bm, #bp, #wt, #bt {
-  cursor:default;
-  -webkit-user-select: none;
--khtml-user-select: none;
--moz-user-select: none;
--ms-user-select: none;
--o-user-select: none;
-user-select: none;
+
+#play {
+  top:25px;
+  left:25px;
+}
+#loop {
+  top:25px;
+  right:25px;
+}
+#pause {
+  bottom:25px;
+  left:25px;
+}
+#stop {
+  bottom:25px;
+  right:25px;
+}
+
+#sat {
+  font-family: Cyber;
+  color: teal;
+  font-size: 300%;
+  width: 200px;
+  height: 200px;
+  border: 10px solid teal;
+  border-radius: 100%;
+  position: absolute;
+  z-index: 2;
+  top:50%;
+  left:50%;
+  margin: -100px 0 0 -100px;
+
+}
+#lokator {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  z-index: 3;
+  top:50%;
+  left:50%;
+  margin: -50px 0 0 -60px;
 }
