@@ -1,0 +1,65 @@
+@font-face {
+    font-family: Cyber;
+    src: url(Cyberfunk.ttf);
+
+}
+h1 {
+  width: 475px;
+  margin: 5% auto;
+  margin-bottom: 3% !important;
+  color: teal;
+  font-size: 400%;
+  font-family: Cyber;
+}
+body {
+  background-image: url("https://c1.staticflickr.com/3/2741/4437940668_d35d1ec67e_b.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: #000;
+}
+
+.kutije {
+  width: 475px;
+  margin: 2% auto;
+  background-color: black;
+  opacity: 0.8;
+}
+
+.kutijice {
+  font-family: Cyber;
+  color: teal;
+  font-size: 200%;
+  margin-top: 15px;
+  line-height: 1.2;
+
+}
+
+.material-icons {
+  color: teal;
+  font-size: 400%;
+}
+
+#gornji {
+  height: 100px;
+}
+#donji {
+  height: 400px;
+}
+#work {
+  float: left;
+  margin-left: 75px;
+}
+#break {
+  float: right;
+  margin-right: 75px;
+}
+#wm, #wp, #bm, #bp, #wt, #bt {
+  cursor:default;
+  -webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+}
