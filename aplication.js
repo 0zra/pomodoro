@@ -75,6 +75,7 @@ $(document).ready(function() {
   $('#play').on('click', function() {
     indikator = true;
     dozvola = false;
+
   });
   $('#pause').on('click', function() {
     indikator = false;
@@ -101,11 +102,15 @@ setInterval(function(){
           {
             $('#radnja').text("BREAK");
             min = +$('#bt').text();
+            $.playSound('coins.mp3');
+
           }
           else
           {
             $('#radnja').text("WORK");
             min = +$('#wt').text();
+            $.playSound('coins.mp3');
+            
           }
       }
 
@@ -116,6 +121,11 @@ setInterval(function(){
       if(min < 10)
       {$("#vrime").prepend("&nbsp;");}
 
+    }
+    if(indikator === true)
+    $('title').text($('#radnja').text()+"("+$('#vrime').text()+")");
+    else {
+      $('title').text("Pomodoro clock");
     }
 
 }, 1000);
